@@ -10,6 +10,7 @@ const venueSearchSchema = new mongoose.Schema({
     guests: Number,
     reviews: Number,
     image: String, 
+    aboutSpace: String,
     createdAt: { type: Date, default: Date.now }
 });
 

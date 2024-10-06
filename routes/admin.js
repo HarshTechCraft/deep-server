@@ -12,6 +12,7 @@ const admin = async (req, res) => {
       rating: req.body.rating,
       guests: req.body.guests,
       reviews: req.body.reviews,
+      aboutSpace: req.body.aboutSpace
     });
 
     console.log(req.bo)
