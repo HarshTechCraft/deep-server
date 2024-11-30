@@ -6,7 +6,7 @@ const login = require('./routes/login')
 const app = express()
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const venuesearch = require("./routes/venueSearch");
+const venuesearch = require("./routes/venueSearch"); 
 const admin = require("./routes/admin");
 
 
