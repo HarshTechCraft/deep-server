@@ -2,15 +2,13 @@ const mongoose = require("mongoose");
 const User = require("../models/users");
 var db = mongoose.connection;
 
-
 const signup = async (req, res) => {
-
- 
-  console.log(req)
+  console.log(req);
   const data = {
-    Email : req.body.Email,
+    Email: req.body.Email,
     Password: req.body.Password,
-  }
+    Name: req.body.name,
+  };
 
   const hasEmail = await User.findOne({ Email: req.body.Email });
 
@@ -22,10 +20,8 @@ const signup = async (req, res) => {
       if (err) console.log(err);
       console.log("inserted new user to database");
     });
-    res.json({signup :true})
-
+    res.json({ signup: true });
   }
 };
 
 module.exports = signup;
-
