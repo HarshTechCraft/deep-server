@@ -27,6 +27,7 @@ const admin = async (req, res) => {
         .json({ message: "Venue search added successfully", savedVenue });
     } else {
       res.status(400).json({ message: "Venue search not added" });
+
     }
   } catch (error) {
     res.status(500).json({ message: "Error adding venue search", error });

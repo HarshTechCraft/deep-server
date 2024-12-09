@@ -13,6 +13,7 @@ const admin = require("./routes/admin");
 require("./models/users");
 app.use(cors());
 
+
 mongoose
   .connect(`${config.MongoUrl}`)
   .then(() => {
